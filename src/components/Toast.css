@@ -1,0 +1,25 @@
+.toast {
+  color: white;
+  margin: 5px;
+  padding: 6px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 274px;
+  .close-btn {
+    cursor: pointer;
+  }
+}
+
+.info {
+  background-color: rgb(112, 112, 239);
+}
+.success {
+  background-color: rgb(9 161 34);
+}
+.error {
+  background-color: rgb(245, 80, 46);
+}
+.warning {
+  background-color: rgb(210 193 29);
+}
