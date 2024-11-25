@@ -6,8 +6,8 @@ export const ToastContext = createContext();
 export const ToastContextProvider = ({children})=>{
     const [toasts, setToasts] = useState([]);
 
-    const addToast = useCallback((type="info", message="", duration=3000)=>{
-        setToasts((prevToasts)=>[...prevToasts, {id: Date.now(), type, message, duration}])
+    const addToast = useCallback((type="info", message="", position="top-right", duration=3000)=>{
+        setToasts((prevToasts)=>[...prevToasts, {id: Date.now(), type, message, position, duration}])
     },[])
     const removeToast = useCallback((id)=>{
         setToasts((prevToasts)=> prevToasts.filter((toast)=> toast.id !== id));

@@ -5,7 +5,7 @@ const Toast = ({ type, message, duration, onClose }) => {
   useEffect(() => {
     const timer = setTimeout(onClose, duration);
     return () => clearTimeout(timer);
-  }, [onClose, duration]);
+  }, [onClose]);
 
   return (
     <div className={`toast ${type}`}>
